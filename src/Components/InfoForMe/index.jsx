@@ -1,28 +1,21 @@
 import Card from "../Card";
 import { techs } from "./utils/techs";
 import { educationData, workExperience } from "./utils/contentData";
+import FadeInSection from "../FadeInSection";
 
 const InfoForMe = () => {
     const transition = "transition duration-300 ease-in-out transform hover:scale-105";
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 bg-[#150927] rounded-3xl text-white min-h-screen shadow">
-
-            {/* Sección Sobre mí */}
-            <AboutSection transition={transition} />
-
-            {/* Sección Tecnologías */}
-            <TechSection transition={transition} techs={techs} />
-
-            {/* Sección Formación */}
-            <EducationSection />
-
-            {/* Sección Experiencia Laboral */}
-            <WorkExperienceSection />
-
-            {/* Sección Enfoque */}
-            <FocusSection />
-        </div>
+        <FadeInSection>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 bg-[#150927] rounded-3xl text-white min-h-screen shadow">
+                <AboutSection transition={transition} />
+                <TechSection transition={transition} techs={techs} />
+                <EducationSection />
+                <WorkExperienceSection />
+                <FocusSection />
+            </div>
+        </FadeInSection>
     );
 };
 
@@ -62,7 +55,6 @@ const TechSection = ({ transition, techs }) => (
                 <TechItem key={index} tech={tech} transition={transition} />
             ))}
         </div>
-
     </Card>
 );
 

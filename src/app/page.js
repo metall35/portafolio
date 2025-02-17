@@ -2,6 +2,7 @@ import Footer from "@/Components/Footer";
 import InfoForMe from "@/Components/InfoForMe";
 import PresentationForMe from "@/Components/PresentationForMe";
 import Projects from "@/Components/Projects";
+import FadeInSection from "@/Components/FadeInSection";
 
 export default function Home() {
   return (
@@ -15,4 +16,3 @@ export default function Home() {
     </div>
   );
 }
-  
