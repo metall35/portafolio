@@ -20,11 +20,13 @@ const preahvihear = Preahvihear({
 export const metadata = {
   title: "Portafolio - Mateo Pereira - Frontend Developer",
   description: "Portafolio de Mateo Pereira, Frontend Developer, hecho con Next.js",
+  
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link rel="icon" href="/icon.ico" sizes="any" />
       <body
         className={`${preahvihear.variable} antialiased`}
       >
