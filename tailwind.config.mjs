@@ -11,6 +11,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      dropShadow: {
+        "glow-purple": "0 0 16px rgba(138, 43, 226, 1)",
+      }
     },
   },
   plugins: [],
