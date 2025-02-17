@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <link rel="icon" href="/icon.ico" sizes="any" />
       <body
-        className={`${preahvihear.variable} antialiased`}
+        className={`antialiased`}
       >
         {children}
       </body>

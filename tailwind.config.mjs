@@ -1,11 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/utils/**/*.{js,ts,jsx,tsx,mdx}", // Agrega todas tus carpetas
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  important: true, // <- Agrega esto para forzar prioridad
   theme: {
     extend: {
       colors: {
@@ -13,7 +12,7 @@ export default {
         foreground: "var(--foreground)",
       },
       dropShadow: {
-        "glow-purple": "0 0 14px rgba(138, 43, 226, 1)",
+        "glow-purple": "0 0 16px rgba(138, 43, 226, 1)",
       }
     },
   },

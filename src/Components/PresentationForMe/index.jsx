@@ -39,7 +39,7 @@ const PresentationForMe = () => {
 
                 <h2 className="text-3xl font-semibold leading-tight">
                     Escribe código que se vea tan bien como
-                    <span className={`${purpleAccent} ${glowEffect}`}> <TypewriterCode words={["funcionar..."]} cursor /></span>
+                    <span className={`${purpleAccent} ${glowEffect}`}> <TypewriterCode words={["funciona..."]} cursor /></span>
                 </h2>
 
                 <p className="text-md text-gray-300/90 italic">
