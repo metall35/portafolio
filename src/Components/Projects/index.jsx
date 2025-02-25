@@ -1,30 +1,43 @@
-import { React } from "../Icons";
+import { React, Figma } from "../Icons";
 import { TechItem } from "../InfoForMe";
-import { projectsData } from "./utils/contentData";
+import { projectsDevData, projectsFigmaData } from "./utils/contentData";
 import FadeInSection from "../FadeInSection";
 
 const Projects = () => {
   return (
     <section className="mt-5 w-full flex flex-col items-center">
       <FadeInSection>
-        <SectionTitle />
+        <SectionTitle title="Proyectos de desarrollo" icon={<React />} />
       </FadeInSection>
 
-      <div className="w-4/5 flex flex-col lg:flex-row gap-8 mt-5">
-        {projectsData.map((project, index) => (
+      <div className="w-4/5 flex flex-col lg:flex-row gap-8 my-5">
+        {projectsDevData.map((project, index) => (
           <FadeInSection key={index}>
             <ProjectCard project={project} />
           </FadeInSection>
         ))}
       </div>
+
+      <FadeInSection>
+        <SectionTitle title="Proyectos de Figma" icon={<Figma />} />
+      </FadeInSection>
+
+      <div className="w-4/5 flex flex-col gap-8 mt-5">
+        {projectsFigmaData.map((project, index) => (
+          <FadeInSection key={index}>
+            <ProjectCard project={project} />
+          </FadeInSection>
+        ))}
+      </div>
+
     </section>
   );
 };
 
 // Componentes auxiliares
-const SectionTitle = () => (
-  <h2 className="flex gap-2 text-3xl items-center">
-    <React /> Proyectos importantes
+const SectionTitle = ({ title, icon }) => (
+  <h2 className="flex gap-2 text-3xl items-center mt-5">
+    {icon} {title}
   </h2>
 );
 
