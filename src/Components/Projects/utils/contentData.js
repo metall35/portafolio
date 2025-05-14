@@ -7,6 +7,13 @@ export const projectsDevData = [
         image: "/unionenamora.png",
         url: "https://launionenamora.gov.co",
         techs: techs.slice(0, 3)
+    },
+    {
+        title: "Flavor Odyssey",
+        description: "Una plataforma abierta para descubrir y compartir recetas, donde cualquier persona puede encontrar inspiración para sus platos favoritos o publicar sus propias creaciones.🍳",
+        image: "/flavorodyssey.png",
+        url: "https://flavor-oddyssey-front.vercel.app",
+        techs: [...techs.slice(0, 3), ...techs.slice(6, 9)],
     }
 
 ];

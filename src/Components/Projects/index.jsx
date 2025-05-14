@@ -10,7 +10,7 @@ const Projects = () => {
         <SectionTitle title="Proyectos de desarrollo" icon={<React />} />
       </FadeInSection>
 
-      <div className="w-4/5 flex flex-col lg:flex-row gap-8 my-5">
+      <div className="w-4/5 flex flex-col gap-8 my-5">
         {projectsDevData.map((project, index) => (
           <FadeInSection key={index}>
             <ProjectCard project={project} />
