@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section className="mt-5 w-full flex flex-col items-center">
       <FadeInSection>
-        <SectionTitle title="Proyectos de desarrollo" icon={<React />} />
+        <SectionTitle title="Proyectos personales" icon={<><React /> <Figma /></>} />
       </FadeInSection>
 
       <div className="w-4/5 flex flex-col gap-8 my-5">
@@ -18,8 +18,8 @@ const Projects = () => {
         ))}
       </div>
 
-      <FadeInSection>
-        <SectionTitle title="Proyectos de Figma" icon={<Figma />} />
+      {/* <FadeInSection>
+        <SectionTitle title="Proyectos UX/UI" icon={<Figma />} />
       </FadeInSection>
 
       <div className="w-4/5 flex flex-col gap-8 mt-5">
@@ -28,7 +28,7 @@ const Projects = () => {
             <ProjectCard project={project} />
           </FadeInSection>
         ))}
-      </div>
+      </div> */}
 
     </section>
   );

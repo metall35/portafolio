@@ -19,5 +19,9 @@ export const workExperience = [
     {
         company: "Andes BPO",
         period: "Mayo - 2024 / Noviembre - 2024"
+    },
+    {
+        company: "Freelance",
+        period: "Enero - 2025 / Actualidad",
     }
 ];
